@@ -3,7 +3,7 @@ Summary(pl):	Tekstowa przegl±darka WWW
 Name:		retawq
 Version:	0.2.5a
 Release:	1
-License:	GPL
+License:	GPL v2
 Group:		Applications/Networking
 Source0:	http://dl.sourceforge.net/retawq/%{name}-%{version}.tar.gz
 # Source0-md5:	5db8e54c8e54526a4cc7b14494e0ea7c
@@ -59,6 +59,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc INSTALL README docu/{*.html,example*}
+%doc docu/{*.html,example*}
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/man*/*
