@@ -1,12 +1,12 @@
 Summary:	Textmode web browser
 Summary(pl):	Tekstowa przegl±darka WWW
 Name:		retawq
-Version:	0.2.6a
+Version:	0.2.6b
 Release:	1
 License:	GPL v2
 Group:		Applications/Networking
 Source0:	http://dl.sourceforge.net/retawq/%{name}-%{version}.tar.gz
-# Source0-md5:	46030416fe3a51aa0f161f8152705831
+# Source0-md5:	3e232dac8f8c17abf33dae4a455a694c
 URL:		http://retawq.sourceforge.net/
 BuildRequires:	gpm-devel
 BuildRequires:	ncurses-devel
@@ -37,6 +37,7 @@ dzielenia ekranu.
 
 %build
 ./configure \
+	CC="%{__cc}" \
 	CFLAGS="%{rpmcflags} %{rpmldflags} -I/usr/include/ncurses" \
 	--path-prefix=$RPM_BUILD_ROOT%{_prefix} \
 	--path-man=$RPM_BUILD_ROOT%{_mandir} \
