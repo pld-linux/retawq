@@ -36,7 +36,8 @@ dzielenia ekranu.
 
 %build
 ./configure CFLAGS="%{rpmcflags} %{rpmldflags} -I/usr/include/ncurses" \
-	--path-prefix=$RPM_BUILD_ROOT/usr \
+	--path-prefix=$RPM_BUILD_ROOT%{_prefix} \
+	--path-man=$RPM_BUILD_ROOT%{_mandir} \
 	--enable-textmodemouse \
 	--enable-i18n \
 	--enable-local-cgi \
@@ -59,3 +60,4 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc INSTALL README docu/{*.html,example*}
 %attr(755,root,root) %{_bindir}/*
+%{_mandir}/man*/*
