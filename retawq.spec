@@ -26,7 +26,7 @@ mode.
 %description -l pl
 retawq jest interaktywnym, wielow±tkowym klientem sieciowym 
 (przegl±dark± WWW) dla tekstowych terminali na systemach 
-Uniksopodobnych. Jest napisany w C, szybki, ma³y, konfigurowalny i 
+uniksopodobnych. Jest napisany w C, szybki, ma³y, konfigurowalny i 
 komfortowy. Przyk³adowo: niskopoziomowa komunikacja sieciowa jest 
 wykonywana w sposób nie blokuj±cy, mo¿esz otworzyæ tyle "wirtualnych 
 okien" ile zechcesz i pracowaæ jednocze¶nie z dwoma z nich w trybie
@@ -36,7 +36,8 @@ dzielenia ekranu.
 %setup -q
 
 %build
-./configure CFLAGS="%{rpmcflags} %{rpmldflags} -I/usr/include/ncurses" \
+./configure \
+	CFLAGS="%{rpmcflags} %{rpmldflags} -I/usr/include/ncurses" \
 	--path-prefix=$RPM_BUILD_ROOT%{_prefix} \
 	--path-man=$RPM_BUILD_ROOT%{_mandir} \
 	--enable-textmodemouse \
