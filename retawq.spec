@@ -11,6 +11,7 @@ URL:		http://retawq.sourceforge.net/
 BuildRequires:	gpm-devel
 BuildRequires:	ncurses-devel
 BuildRequires:	openssl-devel
+BuildRequires:	pkgconfig
 Provides:	webclient
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
