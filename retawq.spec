@@ -39,7 +39,7 @@ dzielenia ekranu.
 %build
 ./configure \
 	CC="%{__cc}" \
-	CFLAGS="%{rpmcflags} %{rpmldflags} -I/usr/include/ncurses" \
+	CFLAGS="%{rpmcflags} %{rpmldflags} -I%{_includedir}/ncurses" \
 	--path-prefix=$RPM_BUILD_ROOT%{_prefix} \
 	--path-man=$RPM_BUILD_ROOT%{_mandir} \
 	--enable-textmodemouse \
