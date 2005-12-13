@@ -18,18 +18,18 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 retawq is an interactive, multi-threaded network client (web browser)
 for text terminals on computers with Unix-like operating systems. It
-is written in C, fast, small, nicely configurable, and comfortable; 
-e.g. the low-level network communications are performed in a 
-non-blocking way, and you can keep open as many "virtual windows" as 
-you want and work simultaneously in two of them in a split-screen 
+is written in C, fast, small, nicely configurable, and comfortable;
+e.g. the low-level network communications are performed in a
+non-blocking way, and you can keep open as many "virtual windows" as
+you want and work simultaneously in two of them in a split-screen
 mode.
 
 %description -l pl
-retawq jest interaktywnym, wielow±tkowym klientem sieciowym 
-(przegl±dark± WWW) dla tekstowych terminali na systemach 
-uniksopodobnych. Jest napisany w C, szybki, ma³y, konfigurowalny i 
-komfortowy. Przyk³adowo: niskopoziomowa komunikacja sieciowa jest 
-wykonywana w sposób nie blokuj±cy, mo¿esz otworzyæ tyle "wirtualnych 
+retawq jest interaktywnym, wielow±tkowym klientem sieciowym
+(przegl±dark± WWW) dla tekstowych terminali na systemach
+uniksopodobnych. Jest napisany w C, szybki, ma³y, konfigurowalny i
+komfortowy. Przyk³adowo: niskopoziomowa komunikacja sieciowa jest
+wykonywana w sposób nie blokuj±cy, mo¿esz otworzyæ tyle "wirtualnych
 okien" ile zechcesz i pracowaæ jednocze¶nie z dwoma z nich w trybie
 dzielenia ekranu.
 
@@ -39,7 +39,7 @@ dzielenia ekranu.
 %build
 ./configure \
 	CC="%{__cc}" \
-	CFLAGS="%{rpmcflags} %{rpmldflags} -I%{_includedir}/ncurses" \
+	CFLAGS="%{rpmcflags} %{rpmldflags} -I/usr/include/ncurses" \
 	--path-prefix=$RPM_BUILD_ROOT%{_prefix} \
 	--path-man=$RPM_BUILD_ROOT%{_mandir} \
 	--enable-textmodemouse \
