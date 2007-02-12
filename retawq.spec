@@ -1,5 +1,5 @@
 Summary:	Textmode web browser
-Summary(pl.UTF-8):   Tekstowa przeglądarka WWW
+Summary(pl.UTF-8):	Tekstowa przeglądarka WWW
 Name:		retawq
 Version:	0.2.6b
 Release:	1
