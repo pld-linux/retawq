@@ -1,5 +1,5 @@
 Summary:	Textmode web browser
-Summary(pl):	Tekstowa przegl±darka WWW
+Summary(pl.UTF-8):   Tekstowa przeglÄ…darka WWW
 Name:		retawq
 Version:	0.2.6b
 Release:	1
@@ -24,13 +24,13 @@ non-blocking way, and you can keep open as many "virtual windows" as
 you want and work simultaneously in two of them in a split-screen
 mode.
 
-%description -l pl
-retawq jest interaktywnym, wielow±tkowym klientem sieciowym
-(przegl±dark± WWW) dla tekstowych terminali na systemach
-uniksopodobnych. Jest napisany w C, szybki, ma³y, konfigurowalny i
-komfortowy. Przyk³adowo: niskopoziomowa komunikacja sieciowa jest
-wykonywana w sposób nie blokuj±cy, mo¿esz otworzyæ tyle "wirtualnych
-okien" ile zechcesz i pracowaæ jednocze¶nie z dwoma z nich w trybie
+%description -l pl.UTF-8
+retawq jest interaktywnym, wielowÄ…tkowym klientem sieciowym
+(przeglÄ…darkÄ… WWW) dla tekstowych terminali na systemach
+uniksopodobnych. Jest napisany w C, szybki, maÅ‚y, konfigurowalny i
+komfortowy. PrzykÅ‚adowo: niskopoziomowa komunikacja sieciowa jest
+wykonywana w sposÃ³b nie blokujÄ…cy, moÅ¼esz otworzyÄ‡ tyle "wirtualnych
+okien" ile zechcesz i pracowaÄ‡ jednoczeÅ›nie z dwoma z nich w trybie
 dzielenia ekranu.
 
 %prep
