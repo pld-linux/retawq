@@ -1,12 +1,12 @@
 Summary:	Textmode web browser
 Summary(pl.UTF-8):	Tekstowa przeglądarka WWW
 Name:		retawq
-Version:	0.2.6b
+Version:	0.2.6c
 Release:	1
 License:	GPL v2
 Group:		Applications/Networking
 Source0:	http://dl.sourceforge.net/retawq/%{name}-%{version}.tar.gz
-# Source0-md5:	3e232dac8f8c17abf33dae4a455a694c
+# Source0-md5:	ee60188bea597680bd39e435a8c73ff9
 URL:		http://retawq.sourceforge.net/
 BuildRequires:	gpm-devel
 BuildRequires:	ncurses-devel
